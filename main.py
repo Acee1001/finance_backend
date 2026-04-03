@@ -27,7 +27,10 @@ app = FastAPI(
 # ── CORS ─────────────────────────────────────────────────────────────────────
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://finance-frontend-six-rho.vercel.app/"],  # Tighten this in production
+    allow_origins=[
+    "http://localhost:5173",
+    "https://finance-frontend-six-rho.vercel.app",
+],  # Tighten this in production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
