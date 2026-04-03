@@ -29,7 +29,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
     "http://localhost:5173",
-    "https://finance-data-processing-f9vftgvyy.vercel.app/"
+    "https://finance-data-processing.vercel.app/"
 ],  # Tighten this in production
     allow_credentials=True,
     allow_methods=["*"],
